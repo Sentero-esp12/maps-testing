@@ -1,4 +1,4 @@
-var takeMouseSpeedIntoAccount = false; /* if set to true, slower mouse speed would mean
+var takeMouseSpeedIntoAccount = false; /* Not fully implemented yet. If set to true, slower mouse speed would mean
  higher accuracy in determining the dimensions of the popup window */
 let height = 500;
 let width = 356;
