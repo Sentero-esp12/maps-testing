@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "GBChess detector",
+    "description": "Detect GBChess and possibly other cheat windows",
+    "version": "0.0.0.1",
+    "key": "MIGfMA3GCSqGSIb3DFEBAQUAA4GNADCBiQKBgQDcBHwzDvyBQ6bDppkIs9MP4ksKqCMyXQ/A52JivHZKh4YO/9vJsT3oaZhSpDCE9RCocOEQvwsHsFReW2nUEc6OLLyoCFFxIb7KkLGsmfakkut/fFdNJYh0xOTbSN8YvLWcqph09XAY2Y/f0AL7vfO1cuCqtkMt8hFrBGWxDdf9CQIDAQAB",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://lichess.org/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        "script.js"
+    ]
+}
